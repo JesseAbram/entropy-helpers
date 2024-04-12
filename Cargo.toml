@@ -1,0 +1,8 @@
+[package]
+name = "manage_threshold_info"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+subxt = {version = "0.35.3", features = ["substrate-compat"]}
+tokio = {version = "1.37.0", features = ["rt-multi-thread"]}
