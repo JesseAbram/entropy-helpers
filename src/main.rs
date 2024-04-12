@@ -10,10 +10,11 @@ pub mod entropy {}
 
 #[tokio::main]
 async fn main() {
-    // menomnic for stash address
+    // menomnic for stash address of the validator to change
     let mnemonic = "//Alice//stash";
-    // set to new endpoint
-    let new_endpoint = "test";
+    // set to new endpoint for the validators tss 
+    let new_endpoint = "1324.123.123:3001";
+    // Url of any node that can recieve this message 
     let url_of_chain = "ws://127.0.0.1:9944";
     let api = OnlineClient::<EntropyConfig>::from_url(url_of_chain)
         .await
